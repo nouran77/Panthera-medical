@@ -187,7 +187,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--start-logo-->
 <div class="logo">
-    <a href="index.html"><img src="{{ asset('images/logo.png') }}" alt="Panthera"></a>
+    <a href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt="Panthera"></a>
 </div>
 <!--start-logo-->
 <!--bottom-header-->

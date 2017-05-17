@@ -11,12 +11,13 @@
                     <div class="product-one">
                         <div class="col-md-4 product-left p-left animatee" data-sr = "enter top, hustle 150 px, wait 300ms" >
                             <div class="product-main simpleCart_shelfItem">
-                                <a href="{{route('cart.edit', $product->id)}}" class="mask"><img class="img-responsive zoom-img" src="{{  asset('img/products') }}/{{ $product->image }}" alt="{{ $product->name }}" /></a>
+                                {{--<a href="{{route('cart.edit', $product->id)}}" class="mask"><img class="img-responsive zoom-img" src="{{  asset('img/products') }}/{{ $product->image }}" alt="{{ $product->name }}" /></a>--}}
+                                <a href="productDetails/{{ $product->id }}" class="mask"><img class="img-responsive zoom-img" src="{{  asset('img/products') }}/{{ $product->image }}" alt="{{ $product->name }}" /></a>
                                 <div class="product-bottom">
                                     <h3>{{ $product->name_english }}</h3>
                                     <p>Explore Now</p>
                                     @if($available->available == true)
-                                    <h4><a class="item_add" href=""><i></i></a> <span name="showthis" class="item_price">{{ $product->price }}</span></h4>
+                                    <h4><a class="item_add" href="productDetails/{{ $product->id }}"><i></i></a> <span name="showthis" class="item_price">{{ $product->price }}</span></h4>
                                     @endif
                                 </div>
                                 <div class="srch srch1">

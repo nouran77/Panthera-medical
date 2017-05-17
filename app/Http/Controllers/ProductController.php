@@ -25,7 +25,9 @@ class ProductController extends Controller
         $product->description_english = $request->description_english;
         $product->description_arabic  = $request->description_arabic;
         $product->price               = $request->price;
-        $product->image               = Helper::uploadImage('image', 'products');
+        if ($request->image) {
+            $product->image = Helper::uploadImage('image','products');
+        }
         $product->category_id         = $request->category;
 
 //        if (!isset($product->id)) {
@@ -81,9 +83,9 @@ class ProductController extends Controller
         return view('product.index',compact('products','available'));
     }
 
-//    public function productDetails($id)
-//    {
-//        $products = Product::find($id);
-//        return view('product.productDetails',compact('products'));
-//    }
+    public function productDetails($id)
+    {
+        $product = Product::find($id);
+        return view('product.productDetails',compact('product'));
+    }
 }

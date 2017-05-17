@@ -17,7 +17,7 @@ Route::post('login', 'HomeController@login');
 Route::post('register', 'HomeController@register');
 
 Route::get('products', 'ProductController@index');
-Route::get('product-details','ProductController@productDetails');
+Route::get('/productDetails/{id}','ProductController@productDetails')->name('productDetails');
 Route::resource('cart','CartController');
 
 /*=======================================

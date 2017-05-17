@@ -9,6 +9,10 @@
         .mt-50 {
             margin-top: 50px;
         }
+        .slim.img-responsive {
+            height: 250px!important;
+            width: 250px!important;
+        }
     </style>
     @endsection
 
@@ -109,11 +113,11 @@
                         </div>
                         <div class="row">
                             <div class="form-group clearfix">
-                                <div class="col-md-12 prl-20">
+                                <div class="col-md-12">
                                     <div class="slim"
                                          data-label="Drop Your Product Image"
-                                         data-size="100,100"
-                                         data-ratio="1:1">
+                                         data-size="250,250"
+                                         data-ratio="1:1" style="height: 250px; width: 250px;">
                                         <input type="file" name="image" class="form-control">
                                     </div>
                                 </div>
@@ -198,11 +202,11 @@
                         </div>
                         <div class="row">
                             <div class="form-group clearfix">
-                                <div class="col-md-12 prl-20">
+                                <div class="col-md-12">
                                     <div class="slim"
                                          data-label="Drop Your Product Image"
-                                         data-size="100,100"
-                                         data-ratio="1:1">
+                                         data-size="250,250"
+                                         data-ratio="1:1" style="height: 250px; width: 250px;">
                                         <img src="{{ asset('img/products') }}/{{ $product->image }}" alt="{{ $product->name }}" class="form-control" id="edit-course-image" name="image"/>
                                     </div>
                                 </div>
