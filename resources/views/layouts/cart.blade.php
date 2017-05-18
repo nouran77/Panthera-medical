@@ -196,8 +196,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-9 header-left">
                 <div class="top-nav">
                     <ul class="memenu skyblue">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="grid"><a href="#">Products</a>
+                        <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                        <li class="grid"><a href="{{ url('products') }}">Products</a>
                             <div class="mepanel">
                                 <div class="row">
                                     <div class="col1 me-one">
@@ -235,8 +235,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Checkout</li>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li class="active">Cart</li>
             </ol>
         </div>
     </div>

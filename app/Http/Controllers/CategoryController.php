@@ -34,6 +34,7 @@ class CategoryController extends Controller
 
     public function updateCategory(Request $request)
     {
+        dd($request->all());
         $category = Category::find($request->id);
         $category->name_english =  $request->name_english;
         $category->name_arabic  =  $request->name_arabic;

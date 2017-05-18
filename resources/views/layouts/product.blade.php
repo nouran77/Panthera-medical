@@ -223,7 +223,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                     </ul>
                 </div>
-                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-3 header-right">
+                <div class="cart box_1">
+                    <a href="{{ route('cart.index') }}">
+                        <div class="total">
+                            <span class="simpleCart_total"></span></div>
+                        <img src="{{ asset('images/cart.png') }}" alt="" />
+                    </a>
+                </div>
             </div>
             <div class="clearfix"> </div>
         </div>

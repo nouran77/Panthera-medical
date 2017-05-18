@@ -97,7 +97,7 @@
                         <h4 class="modal-title text-center">Edit category</h4>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" name="id">
+                        <input type="hidden" name="id" value="{{ $category->id }}">
                         <div class="row">
                             <div class="col-md-12 prl-20">
                                 <div class="form-group">
@@ -185,7 +185,8 @@
                 contentType: false,
                 type: "POST",
                 success: function(response) {
-                    window.location.reload();
+//                    window.location.reload();
+                    console.log(response);
                 },
                 error: function(response) {
 

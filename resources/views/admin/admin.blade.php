@@ -171,7 +171,6 @@
         $(document).ready(function(){
             $('#admins-table').DataTable();
         });
-
         $("form#add-admin").on('submit', function(event) {
             event.preventDefault();
             $.ajax({
@@ -194,7 +193,6 @@
                 }
             });
         });
-
         $(".edit-admin").on("click", function() {
             var id = $(this).data('edit');
             $.ajax({
@@ -210,13 +208,11 @@
                     $("#edit-admin-modal").modal('show');
                 },
                 error: function(response) {
-
                 },
                 beforeSend: function() {
                 }
             });
         });
-
         $("form#edit-admin-form").on('submit', function(event) {
             event.preventDefault();
             $.ajax({
@@ -227,16 +223,13 @@
                 type: "POST",
                 success: function(response) {
                     window.location.reload();
-
                 },
                 error: function(response) {
-
                 },
                 beforeSend: function() {
                 }
             });
         });
-
         $(".delete-admin").on("click", function() {
             var id = $(this).data('delete');
             swal({
@@ -258,7 +251,6 @@
                             window.location.reload();
                         },
                         error: function(response) {
-
                         },
                         beforeSend: function() {
                         }

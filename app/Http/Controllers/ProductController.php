@@ -48,6 +48,7 @@ class ProductController extends Controller
 
     public function updateProduct(Request $request)
     {
+        dd($request->all());
         $product                      = Product::find($request->id);
         $product->name_english        = $request->name_english;
         $product->name_arabic         = $request->name_arabic;

@@ -10,8 +10,8 @@
             margin-top: 50px;
         }
         .slim.img-responsive {
-            height: 250px!important;
-            width: 250px!important;
+            height: 600px!important;
+            width: 200px!important;
         }
     </style>
     @endsection
@@ -116,8 +116,8 @@
                                 <div class="col-md-12">
                                     <div class="slim"
                                          data-label="Drop Your Product Image"
-                                         data-size="250,250"
-                                         data-ratio="1:1" style="height: 250px; width: 250px;">
+                                         data-size="200,600"
+                                         data-ratio="1:3" style="height: 600px; width: 200px;">
                                         <input type="file" name="image" class="form-control">
                                     </div>
                                 </div>
@@ -205,8 +205,8 @@
                                 <div class="col-md-12">
                                     <div class="slim"
                                          data-label="Drop Your Product Image"
-                                         data-size="250,250"
-                                         data-ratio="1:1" style="height: 250px; width: 250px;">
+                                         data-size="200,600"
+                                         data-ratio="1:3" style="height: 600px; width: 200px;">
                                         <img src="{{ asset('img/products') }}/{{ $product->image }}" alt="{{ $product->name }}" class="form-control" id="edit-course-image" name="image"/>
                                     </div>
                                 </div>
@@ -306,7 +306,8 @@
                 contentType: false,
                 type: "POST",
                 success: function(response) {
-                    window.location.reload();
+//                    window.location.reload();
+                    console.log(response);
 
                 },
                 error: function(response) {

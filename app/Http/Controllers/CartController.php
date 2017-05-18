@@ -28,6 +28,10 @@ class CartController extends Controller
         return back();
     }
 
+    public function show()
+    {
+
+    }
 
     public function update(Request $request, $id)
     {

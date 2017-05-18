@@ -225,6 +225,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="clearfix"> </div>
             </div>
+            <div class="col-md-3 header-right">
+                <div class="cart box_1">
+                    <a href="{{ route('cart.index') }}">
+                        <img src="{{ asset('images/cart.png') }}" alt="" />
+                        <div class="total">
+                            <span class="alert badge">{{ Cart::count() }}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -249,7 +259,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
     </div>
     <div class="clearfix"> </div>
-</div>
+</div><br>
 <!--banner-ends-->
 <!--Slider-Starts-Here-->
 {{--<script src="{{ asset('js/responsiveslides.min.js') }}"></script>--}}
